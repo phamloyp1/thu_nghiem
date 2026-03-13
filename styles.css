@@ -1,0 +1,155 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f2f4f8;
+    font-size: 60px;   /* Tăng toàn bộ cỡ chữ */
+}
+
+/* ================= HEADER ================= */
+
+/* Banner có nền ảnh */
+.banner {
+    background: url("img/banner.jpg") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;   /* Tăng chiều cao */
+    position: relative;
+}
+
+/* Lớp phủ làm chữ rõ hơn */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.banner h1 {
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+/* Slogan */
+.slogan {
+    background-color: #1fa2c6;
+    color: white;
+    padding: 50px 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.block_3 {
+    width: 30%;
+    min-width: 250px;
+}
+
+.block_3 h2 {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.block_3 p {
+    font-size: 40px;
+}
+
+/* ================= CONTENT ================= */
+
+table {
+    width: 85%;
+    margin: 60px auto;
+    border-spacing: 40px;
+}
+
+.cell_text {
+    width: 50%;
+    font-size: 40px;
+}
+
+.cell_text h3 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.cell_text ul {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.cell_text li {
+    margin-bottom: 10px;
+}
+
+.cell_text a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 40px;
+}
+
+.cell_text a:hover {
+    background-color: #ff6600;
+}
+
+/* ================= IMAGE ================= */
+
+.cell_img {
+    width: 50%;
+}
+
+.cell_img img {
+    width: 100%;
+    height: auto;        /* Không bị cắt */
+    border-radius: 12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;   /* Căn giữa toàn bộ */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;   /* Xếp dọc */
+    align-items: center;      /* Căn giữa */
+}
+
+.footer ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
